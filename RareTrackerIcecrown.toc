@@ -2,7 +2,7 @@
 ## Title: RareTrackerIcecrown
 ## Notes: Track and coordinate rare spawn timers for the rares in the Icecrown launch event.
 ## Author: Melroy, Ayr
-## Version: 7.1.1
+## Version: 7.1.2
 ## Dependencies: RareTrackerCore
 
 Locales\enUS.lua
