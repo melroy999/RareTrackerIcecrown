@@ -33,30 +33,30 @@ RareTracker.RegisterRaresForModule({
     -- Define the zone(s) in which the rares are present.
     ["target_zones"] = {118},
     ["zone_name"] = "Icecrown",
-    ["plugin_name"] = "Icecrown",
+    ["plugin_name"] = "Icecrown (Death's Rising Event)",
     ["plugin_name_abbreviation"] = "Icecrown",
     ["entities"] = {
         --npc_id = {L[name], quest_id, {coordinates}}
-        [174067] = {L[174067], 62345, {31.6, 70.5}}, -- Noth the Plaguebringer
-        [174066] = {L[174066], 62344, {36.5, 67.4}}, -- Patchwerk
-        [174065] = {L[174065], 62343, {49.7, 32.7}}, -- Blood Queen Lana'thel
-        [174064] = {L[174064], 62342, {57.1, 30.3}}, -- Professor Putricide
-        [174063] = {L[174063], 62341, {51.1, 78.5}}, -- Lady Deathwhisper
-        [174062] = {L[174062], 62340, {57.8, 56.1}}, -- Skadi the Ruthless
-        [174061] = {L[174061], 62339, {52.4, 52.6}}, -- Ingvar the Plunderer
-        [174060] = {L[174060], 62338, {54.0, 44.7}}, -- Prince Keleseth
-        [174059] = {L[174059], 62337, {64.8, 22.1}}, -- the Black Knight
-        [174058] = {L[174058], 62336, {70.7, 38.4}}, -- Bronjahm <Godfather of Souls>
-        [174057] = {L[174057], 62335, {47.2, 66.1}}, -- Scourgelord Tyrannus
-        [174056] = {L[174056], 62334, {58.6, 72.5}}, -- Forgemaster Garfrost
-        [174055] = {L[174055], 62333, {58.2, 83.4}}, -- Marwyn
-        [174054] = {L[174054], 62332, {50.2, 87.9}}, -- Falric
-        [174053] = {L[174053], 62331, {80.1, 61.2}}, -- The Prophet Tharon'ja
-        [174052] = {L[174052], 62330, {77.8, 66.1}}, -- Novos the Summoner
-        [174051] = {L[174051], 62329, {58.3, 39.4}}, -- Trollgore
-        [174050] = {L[174050], 62328, {67.5, 58.0}}, -- Krik'thir the Gatewatcher
-        [174049] = {L[174049], 62327, {29.6, 62.2}}, -- Prince Taldaram
-        [174048] = {L[174048], 62326, {44.2, 49.1}}, -- Elder Nadox
+        [174065] = {"1. "..L[174065], 62343, {49.7, 32.7}}, -- "Blood Queen Lana'thel"
+        [174064] = {"2. "..L[174064], 62342, {57.1, 30.3}}, -- "Professor Putricide"
+        [174063] = {"3. "..L[174063], 62341, {51.1, 78.5}}, -- "Lady Deathwhisper"
+        [174062] = {"4. "..L[174062], 62340, {57.8, 56.1}}, -- "Skadi the Ruthless"
+        [174061] = {"5. "..L[174061], 62339, {52.4, 52.6}}, -- "Ingvar the Plunderer"
+        [174060] = {"6. "..L[174060], 62338, {54.0, 44.7}}, -- "Prince Keleseth"
+        [174059] = {"7. "..L[174059], 62337, {64.8, 22.1}}, -- "The Black Knight"
+        [174058] = {"8. "..L[174058], 62336, {70.7, 38.4}}, -- "Bronjahm"
+        [174057] = {"9. "..L[174057], 62335, {47.2, 66.1}}, -- "Scourgelord Tyrannus"
+        [174056] = {"10. "..L[174056], 62334, {58.6, 72.5}}, -- "Forgemaster Garfrost"
+        [174055] = {"11. "..L[174055], 62333, {58.2, 83.4}}, -- "Marwyn"
+        [174054] = {"12. "..L[174054], 62332, {50.2, 87.9}}, -- "Falric"
+        [174053] = {"13. "..L[174053], 62331, {80.1, 61.2}}, -- "The Prophet Tharon'ja"
+        [174052] = {"14. "..L[174052], 62330, {77.8, 66.1}}, -- "Novos the Summoner"
+        [174051] = {"15. "..L[174051], 62329, {58.3, 39.4}}, -- "Trollgore"
+        [174050] = {"16. "..L[174050], 62328, {67.5, 58.0}}, -- "Krik'thir the Gatewatcher"
+        [174049] = {"17. "..L[174049], 62327, {29.6, 62.2}}, -- "Prince Taldaram"
+        [174048] = {"18. "..L[174048], 62326, {44.2, 49.1}}, -- "Elder Nadox"
+        [174067] = {"19. "..L[174067], 62345, {31.6, 70.5}}, -- "Noth the Plaguebringer"
+        [174066] = {"20. "..L[174066], 62344, {36.5, 67.4}}, -- "Patchwerk"
     },
     ["FindMatchForText"] = function(self, text)
         -- Check if any of the drill rig designations is contained in the broadcast text.
@@ -66,5 +66,9 @@ RareTracker.RegisterRaresForModule({
                 return
             end
         end
-    end
-})
+    end,
+    ["rare_order"] = {
+        174065, 174064, 174063, 174062, 174061, 174060, 174059, 174058, 174057, 174056, 
+        174055, 174054, 174053, 174052, 174051, 174050, 174049, 174048, 174067, 174066
+    }
+})                  

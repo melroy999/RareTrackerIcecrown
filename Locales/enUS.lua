@@ -1,8 +1,6 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("RareTracker", "enUS", true, true)
 if not L then return end
 
--- L[npc_id] = "Npc Name"
-
 L[174067] = "Noth the Plaguebringer" -- Noth the Plaguebringer
 L[174066] = "Patchwerk" -- Patchwerk
 L[174065] = "Blood Queen Lana'thel" -- Blood Queen Lana'thel
@@ -12,7 +10,7 @@ L[174062] = "Skady the Ruthless" -- Skadi the Ruthless
 L[174061] = "Ingvar the Plunderer" -- Ingvar the Plunderer
 L[174060] = "Prince Keleseth" -- Prince Keleseth
 L[174059] = "The Black Knight" -- the Black Knight
-L[174058] = "Bronjahm <Godfather of Souls>" -- Bronjahm <Godfather of Souls>
+L[174058] = "Bronjahm" -- Bronjahm
 L[174057] = "Scourgelord Tyrannus" -- Scourgelord Tyrannus
 L[174056] = "Forgemaster Garfrost" -- Forgemaster Garfrost
 L[174055] = "Marwyn" -- Marwyn
